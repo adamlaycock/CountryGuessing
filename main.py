@@ -43,7 +43,7 @@ st.plotly_chart(
     config={'displayModeBar': False}
 )
 
-progress = len(st.session_state.guesses) / 54
+progress = len(st.session_state.guesses) / 55
 st.progress(progress, text='Percentage Completion')
 
 with st.form('guess_form', clear_on_submit=True):
