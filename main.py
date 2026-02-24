@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-countries = pd.read_csv(r'data\countries.csv')
+countries = pd.read_csv('data/countries.csv')
 countries['name_lower'] = countries['name'].str.lower()
 
 if 'guesses' not in st.session_state:
